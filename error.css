@@ -1,0 +1,65 @@
+body {
+    background-color: #0078D7; /* Standard Windows 10 Blue */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    /* Center all content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.bsod-container {
+    /* Main container for spacing */
+    max-width: 800px;
+    padding: 0 40px; /* Padding on the sides */
+}
+
+/* --- Top Section --- */
+.sad-face {
+    font-size: 150px;
+    font-weight: 300; /* Lighter font weight for the modern look */
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.progress-text {
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+/* --- QR Code and Details Section (Side-by-Side) --- */
+.info-section {
+    display: flex;
+    gap: 50px; /* Space between QR and text */
+    margin-top: 100px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+}
+
+.info-details {
+    /* Contains the link and stop code text */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom of the section */
+}
+
+.details-link {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.details-code {
+    font-size: 14px;
+    margin: 3px 0;
+}

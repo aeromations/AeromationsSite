@@ -1,0 +1,60 @@
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 20px; /* Space between gallery items */
+}
+
+.gallery {
+    /* Style the image container itself for the FA frame look */
+    flex-basis: 220px; /* Base size */
+    flex-grow: 0; 
+    background-color: rgba(255, 255, 255, 0.95); /* Bright white background for the 'card' */
+    border-radius: 8px; /* Soft rounded corners */
+    
+    /* Glossy 2008 Frame */
+    border: 1px solid #cceeff; /* Light blue border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), /* Soft shadow */
+                0 0 5px rgba(100, 180, 255, 0.4); /* Subtle blue glow */
+    
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery:hover {
+    transform: translateY(-3px); /* Lift slightly on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 
+                0 0 10px rgba(100, 180, 255, 0.8); /* Stronger glow on hover */
+}
+
+.gallery a {
+    display: block;
+}
+
+.gallery img {
+    /* Sets a fixed max-width for the image itself */
+    max-width: 100%; /* Image fills its container */
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    /* Adds a thin, clean border to separate image from description */
+    border-bottom: 1px solid #bbddee;
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+    color: #1a4f6d; /* Dark blue text from buttons for consistency */
+}
+
+.description h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); /* Text shine */
+}
+.description p {
+    font-size: 0.9em;
+    margin-bottom: 0;
+}

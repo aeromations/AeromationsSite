@@ -1,0 +1,151 @@
+/* ==========================================================
+   GLOBAL STYLES (Frutiger Aero Background)
+   ========================================================== */
+body {
+    /* Base color: A clean, light aqua/cyan */
+    background-color: #e0f2ff; 
+    
+    /* Subtle vertical gradient for depth (fades from light to slightly darker) */
+    background-image: linear-gradient(to bottom, #f0f8ff, #d8e8f8); 
+    
+    /* Ensure the body takes up the whole screen and has appropriate dimensions */
+    min-height: 100vh;
+    max-width: 100%;
+    
+    /* Your original text styles */
+    color: black;
+    font-family: Verdana;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Ensure the banner image is displayed correctly */
+header > img#banner {
+    display: block;
+}
+
+/* ==========================================================
+   FRUTIGER AERO BUTTON STYLES (Navigation Bar)
+   ========================================================== */
+.barry {
+    text-align: center;
+    padding: 15px 0; /* Add space around the button bar */
+}
+
+.nav-button {
+    /* Make them look like buttons */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+    /* Glossy 2008/FA Look */
+    border-radius: 18px; /* High curvature */
+    
+    /* Background Gradient (The glossy shine) */
+    background: linear-gradient(to bottom, #d0eaff 0%, #a0c9e7 100%); 
+    
+    /* Border and Shadow (Depth) */
+    border: 1px solid #7cb9d9;
+    color: #1a4f6d; /* Dark blue text for contrast */
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7); /* White shadow for digital gleam */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Soft shadow */
+                inset 0 1px 0 rgba(255, 255, 255, 0.6); /* Top highlight/shine */
+}
+
+/* Hover Effect (Making it look interactive) */
+.nav-button:hover {
+    background: linear-gradient(to bottom, #a0c9e7 0%, #d0eaff 100%); /* Reverse the gradient on hover */
+    box-shadow: 0 0 15px rgba(100, 180, 255, 0.8); /* Stronger blue glow on hover */
+}
+
+/* ==========================================================
+   ICON SWAP STYLES (The Hover Trick)
+   ========================================================== */
+.icon-swap-container {
+    display: inline-block;
+    position: relative;
+    height: 18px; /* Matches icon height */
+    width: 20px; /* Provides space for the icon */
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.icon-swap-container img {
+    height: 100%;
+    width: auto;
+    position: absolute; /* Allows both images to overlap */
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-in-out; /* Smooth fade effect */
+}
+
+/* Hide the white hover icon by default */
+.hover-icon {
+    opacity: 0; 
+}
+
+/* Show the hover icon and hide the default icon on button hover */
+.nav-button:hover .hover-icon {
+    opacity: 1;
+}
+
+.nav-button:hover .default-icon {
+    opacity: 0;
+}
+
+/* ==========================================================
+   LOGO STYLES
+   ========================================================== */
+.logo {
+    /* Center the container for the logo image */
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.logo img {
+    /* Control the size of the logo image */
+    max-width: 100%; 
+    width: 350px;    /* ADJUST THIS VALUE for logo size */
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+}
+
+
+/* ==========================================================
+   FRUTIGER AERO CONTENT BOX STYLES (The Glass Window)
+   ========================================================== */
+.content-box {
+    /* 1. Dimensions and Alignment */
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 30px; 
+    
+    /* 2. The Translucent/Glass Effect (The Frutiger Aero Core) */
+    background-color: rgba(255, 255, 255, 0.85); 
+    
+    /* Apply a blur to the background for the "glass" look */
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    
+    /* 3. The Glossy 2008 Look */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15),
+                0 0 15px rgba(135, 206, 250, 0.6); /* Blue 'aero' glow */
+}
+
+/* Text styles for readability inside the content box */
+.content-box p, .content-box li, .content-box h1, .content-box h2 {
+    color: #333; 
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.content-box h1, .content-box h2 {
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); 
+}
